@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {margin: 0; padding: 0;}
 li {list-style: none;}
 a {text-decoration: none; color: #333;}
@@ -10,6 +13,7 @@ html, body {
 
 /* header */
 header {
+    font-family: 'Noto Sans KR', sans-serif;
     height: 50px;
     line-height: 50px;
 }
@@ -19,15 +23,17 @@ header div {
     display: flex;
     justify-content: space-between;
 }
-header div h1 a {
-    font-size: 20px;
+header div h1 strong {
+    font-family: 'Ubuntu', sans-serif;
 }
 header div a {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 15px;
 }
 
 /* .main_visual */
 .main_visual {
+    font-family: 'Noto Sans KR', sans-serif;
     width: 100%;
     /* height: 100vh; */
     height: calc(100vh - 50px);
@@ -38,7 +44,7 @@ header div a {
     width: 100%;
     height: 100%;
 }
-.main_visual figure img {
+.main_visual figure video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -57,10 +63,12 @@ header div a {
     align-content: center;
 }
 .main_visual .title h2 {
+    font-family: 'Ubuntu', sans-serif;
     width: 100%;
     font-size: 60px;
 }
 .main_visual .title p {
+    font-family: 'Ubuntu', sans-serif;
     width: 100%;
     font-size: 30px;
     margin-bottom: 40px;
@@ -70,12 +78,13 @@ header div a {
     width: 150px;
     height: 50px;
     line-height: 50px;
-    background-color: aquamarine;
+    background-color: #333;
     text-align: center;
 }
 
 /* .best_v */
 .best_v {
+    font-family: 'Noto Sans KR', sans-serif;
     padding: 100px 0;
 }
 .best_v .title {
@@ -83,6 +92,7 @@ header div a {
     margin-bottom: 40px;
 }
 .best_v .title h3 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
 }
 .best_v .title p {
@@ -135,7 +145,7 @@ header div a {
 .best_v .cont .info ul li a {
     height: 45px;
     line-height: 45px;
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
     box-sizing: border-box;
     display: block;
     padding: 0 25px;
@@ -143,11 +153,12 @@ header div a {
 }
 .best_v .cont .info ul li:nth-child(1) a {
     /* 유튜브이동 디자인 */
-    background-color: rgba(160, 140, 231, 0.377);
+    background-color: bisque;
 }
 
 /* .motion start */
 .motion {
+    font-family: 'Noto Sans KR', sans-serif;
     padding: 100px 0;
 }
 .motion .title {
@@ -155,7 +166,8 @@ header div a {
     margin-bottom: 40px;
 }
 .motion .title h3 {
-font-size: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 45px;
 }
 .motion .title p {
     font-size: 20px;
@@ -170,15 +182,16 @@ font-size: 45px;
     /* 마우스모양 : 손모양 */
     height: 45px;
     line-height: 45px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     padding: 0 30px;
     margin: 0 5px;
     box-sizing: border-box;
+    background-color: rgba(255, 228, 196, 0.418);
 }
 .motion .list li.on{
-    box-shadow: 2px 2px 3px rgba(85, 76, 76, 0.699);
+    box-shadow: 2px 2px 3px rgba(85, 84, 76, 0.699);
     /* 그림자 : x축 y축 블러 색상 */
-    background-color: antiquewhite;
+    background-color: bisque;
     color: #333;
     border: 0;
 }
@@ -235,6 +248,7 @@ font-size: 45px;
 }
  /* .g_ver05 */
  .g_ver05 {
+    font-family: 'Noto Sans KR', sans-serif;
     background: url(images/visual1-1.jpg) center center / cover no-repeat;
     background-attachment: fixed;
     padding: 100px 0;
@@ -247,6 +261,7 @@ font-size: 45px;
     margin: 0 auto;
 }
 .g_ver05 .title h3 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 45px;
 }
 .g_ver05 .title p {
@@ -294,6 +309,7 @@ font-size: 45px;
 }
 /* .about */
 .about {
+    font-family: 'Noto Sans KR', sans-serif;
     padding: 100px;
 }
 .about .cont {
@@ -323,10 +339,12 @@ font-size: 45px;
     margin: 20px 0;
 }
 .about .cont .info div h4 {
-     font-size: 30px;
-     margin-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 .about .cont .info div p {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     margin-bottom: 5px;
 }
@@ -339,7 +357,9 @@ font-size: 45px;
     font-size: 20px;
 }
 
+/* footer */
  footer {
+     font-family: 'Noto Sans KR', sans-serif;
      background-color: #333;
      text-align: center;
      color: #ccc;
@@ -358,7 +378,7 @@ font-size: 45px;
     color: #ccc;
 }
  footer ul li:first-child {
-     background-color: rgb(255, 115, 115);
+     background-color: bisque;
  }
  footer ul li:first-child a {
      color: #333;
