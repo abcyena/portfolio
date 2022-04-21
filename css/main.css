@@ -8,7 +8,7 @@ li {list-style: none;}
 a {text-decoration: none; color: #333;}
 html, body {
         color: #333;
-        min-width: 1280px;
+        /* min-width: 1280px; */
 }
 
 /* header */
@@ -78,7 +78,7 @@ header div a {
     width: 150px;
     height: 50px;
     line-height: 50px;
-    background-color: #333;
+    background-color: #5391b8;
     text-align: center;
 }
 
@@ -150,10 +150,11 @@ header div a {
     display: block;
     padding: 0 25px;
     margin-right: 10px;
+    color: #fff;
 }
 .best_v .cont .info ul li:nth-child(1) a {
     /* 유튜브이동 디자인 */
-    background-color: bisque;
+    background-color: #61a7d3;
 }
 
 /* .motion start */
@@ -186,12 +187,12 @@ header div a {
     padding: 0 30px;
     margin: 0 5px;
     box-sizing: border-box;
-    background-color: rgba(255, 228, 196, 0.418);
+    background-color: rgba(114, 153, 177, 0.308);
 }
 .motion .list li.on{
-    box-shadow: 2px 2px 3px rgba(85, 84, 76, 0.699);
+    box-shadow: 2px 2px 3px rgba(76, 78, 85, 0.699);
     /* 그림자 : x축 y축 블러 색상 */
-    background-color: bisque;
+    background-color: rgb(141, 190, 221);
     color: #333;
     border: 0;
 }
@@ -252,11 +253,11 @@ header div a {
     background: url(images/visual1-1.jpg) center center / cover no-repeat;
     background-attachment: fixed;
     padding: 100px 0;
-    background-color: #ccc;
+    background-color: rgba(114, 153, 177, 0.308);
 }
 .g_ver05 .title {
     text-align: center;
-    color: #fff;
+    color: #333;
     width: 1280px;
     margin: 0 auto;
 }
@@ -378,13 +379,74 @@ header div a {
     color: #ccc;
 }
  footer ul li:first-child {
-     background-color: bisque;
+    background-color: #5391b8;
+     border: none;
  }
  footer ul li:first-child a {
-     color: #333;
+     color: #fff;
  }
  footer p {
      margin-top: 20px;
      font-size: 14px;
      color: rgba(255, 255, 255, 0.425);
  }
+
+ /* 반응형 제작
+ 해상도 가로 960px 이하일 떄 적용되는 스타일 */
+
+ @media screen and (max-width: 1280px){
+    /* 브라우저 너비 1280px이하일 때 스타일 */
+    header div {width: 100%;}
+    .main_visual .title {width: 100%;}
+    .best_v .cont {width: 100%;}
+    .motion .motion_cont .list_cont {width: 100%;}
+    .g_ver05 .cont {width: 100%;}
+    .g_ver05 .title {width: 100%;}
+    .about .cont {width: 100%;}
+ }/* 해상도 1280px이하 */
+
+ @media screen and (max-width: 960px) {
+    .best_v .cont {flex-wrap: wrap;}
+    .best_v .cont .youtube {width: 100%;}
+    .best_v .cont .info {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .best_v .cont .info p:nth-of-type(2) {
+        margin: 10px 0 20px;
+    }
+    .motion .list {
+        flex-wrap: wrap;
+    }
+    .motion .list li {
+        margin-bottom: 10px;
+    }
+    .motion .motion_cont .list_cont .items {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .g_ver05 .cont {
+        flex-wrap: wrap;
+    }
+    .g_ver05 .cont .items {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .about .cont {
+        flex-wrap: wrap;
+    }
+    .about .cont figure {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .about .cont .info {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    body {overflow-x: hidden;}
+ }/* 해상도 960px 이하 */
